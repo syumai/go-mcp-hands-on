@@ -1,18 +1,38 @@
 package server
 
-import "github.com/mark3labs/mcp-go/server"
+import (
+	"context"
+	"fmt"
+
+	"github.com/mark3labs/mcp-go/mcp"
+	"github.com/mark3labs/mcp-go/server"
+	ceaser "github.com/syumai/go-mcp-hands-on/05/ceaser-mcp/ceaser"
+)
 
 func New() *server.MCPServer {
 	s := server.NewMCPServer(
 		"Ceaser Cipher",
 		"1.0.0",
 	)
-	// Add tool here
-	// name: "ceaser_rotate"
-	// description: "Rotate a string by a given number of positions. It is used to encrypt or decrypt text of Ceaser Cipher."
+	tool := mcp.NewTool("ceaser_rotate",
+		mcp.WithDescription("Rotate a string by a given number of positions. It is used to encrypt or decrypt text of Ceaser Cipher."),
+		mcp.WithNumber("shift",
+			mcp.Description("Number of positions to rotate")),
+		mcp.WithString("text",
+			mcp.Description("Text to rotate")),
+	)
+	s.AddTool(tool, rotateHandler)
 	return s
 }
 
-func rotateHandler() {
-	// TODO: implement
+func rotateHandler(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
+	shift, ok := request.Params.Arguments["shift"].(float64)
+	if !ok {
+		return nil, fmt.Errorf("shift must be an integer")
+	}
+	text, ok := request.Params.Arguments["text"].(string)
+	if !ok {
+		return nil, fmt.Errorf("text must be a string")
+	}
+	return mcp.NewToolResultText(ceaser.RotN(text, int(shift))), nil
 }
