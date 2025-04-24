@@ -65,7 +65,7 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 例えば、以下のようにチャットで伝えてみてください。
 
 ```
-以下のシーザー暗号を解いて、意味のある文章に復号してください。
+以下のシーザー暗号を解いて、意味のある文に復号してください。
 シフトする数字は1から26まで順番に変更し、正解がわかるまでは絶対に数字を抜かさないでください。
 
 Jmdji dhkgzhziozy vi vntixcmjijpn hdyygzrvmz oj diozmxzko lpvozmivmt VKD mzlpznon.
