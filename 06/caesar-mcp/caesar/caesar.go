@@ -1,4 +1,4 @@
-package ceaser
+package caesar
 
 func RotN(text string, shift int) string {
 	result := make([]byte, len(text))

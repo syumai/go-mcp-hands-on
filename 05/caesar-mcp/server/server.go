@@ -4,12 +4,12 @@ import "github.com/mark3labs/mcp-go/server"
 
 func New() *server.MCPServer {
 	s := server.NewMCPServer(
-		"Ceaser Cipher",
+		"caesar Cipher",
 		"1.0.0",
 	)
 	// Add tool here
-	// name: "ceaser_rotate"
-	// description: "Rotate a string by a given number of positions. It is used to encrypt or decrypt text of Ceaser Cipher."
+	// name: "caesar_rotate"
+	// description: "Rotate a string by a given number of positions. It is used to encrypt or decrypt text of caesar Cipher."
 	return s
 }
 

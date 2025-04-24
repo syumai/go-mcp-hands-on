@@ -2,7 +2,7 @@
 
 ## お題
 
-シーザー暗号を解くためのMCPサーバーを実装します。コマンド名は、 `ceaser-mcp` です。
+シーザー暗号を解くためのMCPサーバーを実装します。コマンド名は、 `caesar-mcp` です。
 
 シーザー暗号は、非常にシンプルな暗号で、単に渡された文字列を、指定された数字の分、順番にアルファベットをずらすことで暗号化します。
 
@@ -44,8 +44,8 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 
 ## 実装について
 
-実装に使う `RotN` 関数は、 `05/ceaser-mcp/ceaser/ceaser.go` に実装されています。
-この関数を使って、`05/ceaser-mcp/server/server.go` を実装してください。
+実装に使う `RotN` 関数は、 `05/caesar-mcp/caesar/caesar.go` に実装されています。
+この関数を使って、`05/caesar-mcp/server/server.go` を実装してください。
 
 ツールのパラメーターは、以下の2つです。
 
@@ -63,12 +63,12 @@ VS Code以外をご利用の方は、フルパスをご利用ください。
 
 ```json
 "servers": {
-  "ceaser-mcp": {
+  "caesar-mcp": {
     "type": "stdio",
     "command": "go",
     "args": [
       "run",
-      "${userHome}/go/src/github.com/syumai/go-mcp-hands-on/05/ceaser-mcp"
+      "${userHome}/go/src/github.com/syumai/go-mcp-hands-on/05/caesar-mcp"
     ]
   }
 }

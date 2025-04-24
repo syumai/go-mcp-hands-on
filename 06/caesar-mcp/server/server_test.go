@@ -64,7 +64,7 @@ func TestTools(t *testing.T) {
 
 			// リクエストを組み立てる
 			var request mcp.CallToolRequest
-			request.Params.Name = "ceaser_rotate"
+			request.Params.Name = "caesar_rotate"
 			request.Params.Arguments = tt.args
 
 			// テストケースを実行

@@ -1,4 +1,4 @@
-package ceaser
+package caesar
 
 import (
 	"testing"
@@ -56,7 +56,7 @@ func TestRotN(t *testing.T) {
 		t.Run(name, func(t *testing.T) {
 			result := RotN(tt.input, tt.shift)
 			if result != tt.expected {
-				t.Errorf("RotN(%q, %d) = %q, expected %q", 
+				t.Errorf("RotN(%q, %d) = %q, expected %q",
 					tt.input, tt.shift, result, tt.expected)
 			}
 		})

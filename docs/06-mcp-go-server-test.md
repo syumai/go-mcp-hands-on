@@ -10,7 +10,7 @@ mcp-goを使ったMCPサーバーのテストは、以下を組み合わせる�
 
 ## テストの実装
 
-`06/ceaser-mcp/server/server_test.go` の内容を上から解説していきます。
+`06/caesar-mcp/server/server_test.go` の内容を上から解説していきます。
 
 ## 課題
 
