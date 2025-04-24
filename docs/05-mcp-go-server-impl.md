@@ -39,8 +39,8 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 シーザー暗号を解くMCPサーバーを実装し、生成AIに以下の暗号文を解かせてください。
 
 ```
-1. Twnts nruqjrjsyji fs fxdshmwtstzx rniiqjbfwj yt nsyjwhjuy vzfyjwsfwd FUN wjvzjxyx.
-2. Lmdm dqrmofadqp ftq baxkyadbtuo uztqdufmzoq efdgofgdq rad nqffqd qzombegxmfuaz.
+1. Jmdji dhkgzhziozy vi vntixcmjijpn hdyygzrvmz oj diozmxzko lpvozmivmt VKD mzlpznon.
+2. Rsjs jwxsulgjwv lzw hgdqegjhzau afzwjalsfuw kljmulmjw xgj twllwj wfushkmdslagf.
 ```
 
 答えは、このページの一番下に記載します。
@@ -66,7 +66,7 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 以下のシーザー暗号を解いて、意味のある文章に復号してください。
 シフトする数字は1から26まで順番に変更し、正解がわかるまでは絶対に数字を抜かさないでください。
 
-Twnts nruqjrjsyji fs fxdshmwtstzx rniiqjbfwj yt nsyjwhjuy vzfyjwsfwd FUN wjvzjxyx.
+Jmdji dhkgzhziozy vi vntixcmjijpn hdyygzrvmz oj diozmxzko lpvozmivmt VKD mzlpznon.
 ```
 
 また、指示が正しく解釈されるかはモデルの性質にもよります。
