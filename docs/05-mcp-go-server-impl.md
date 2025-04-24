@@ -54,8 +54,10 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 
 * text: 文字列
   - 必須
+  - 説明: "Text to rotate"
 * shift: 数値
   - デフォルト値: 13
+  - 説明: "Number of positions to rotate"
 
 ## 呼び出しのプロンプトについて
 
