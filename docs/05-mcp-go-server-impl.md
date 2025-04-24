@@ -38,9 +38,12 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 
 シーザー暗号を解くMCPサーバーを実装し、生成AIに以下の暗号文を解かせてください。
 
+```
 1. Twnts nruqjrjsyji fs fxdshmwtstzx rniiqjbfwj yt nsyjwhjuy vzfyjwsfwd FUN wjvzjxyx.
 2. Lmdm dqrmofadqp ftq baxkyadbtuo uztqdufmzoq efdgofgdq rad nqffqd qzombegxmfuaz.
-3. Erltgwxk fxmbvnehnler wxunzzxw max kxvnklbox tezhkbmaf vtnlbgz lmtvd hoxkyehp xqvximbhgl.
+```
+
+答えは、このページの一番下に記載します。
 
 ## 実装について
 
@@ -50,8 +53,24 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 ツールのパラメーターは、以下の2つです。
 
 * text: 文字列
+  - 必須
 * shift: 数値
   - デフォルト値: 13
+
+## 呼び出しのプロンプトについて
+
+シーザー暗号は、1から26の数字で試行する必要があるので、プロンプトでそのことを強く伝える必要があります。
+例えば、以下のようにチャットで伝えてみてください。
+
+```
+以下のシーザー暗号を解いて、意味のある文章に復号してください。
+シフトする数字は1から26まで順番に変更し、正解がわかるまでは絶対に数字を抜かさないでください。
+
+Twnts nruqjrjsyji fs fxdshmwtstzx rniiqjbfwj yt nsyjwhjuy vzfyjwsfwd FUN wjvzjxyx.
+```
+
+また、指示が正しく解釈されるかはモデルの性質にもよります。
+Claude 3.5 Sonnet / Claude 3.7 Sonnetはある程度指示を正しく解釈してくれる印象なので、これらをおすすめします。
 
 ## MCPサーバーの登録方法
 
@@ -68,8 +87,17 @@ VS Code以外をご利用の方は、フルパスをご利用ください。
     "command": "go",
     "args": [
       "run",
-      "${userHome}/go/src/github.com/syumai/go-mcp-hands-on/05/caesar-mcp"
+      "-C",
+      "${userHome}/go/src/github.com/syumai/go-mcp-hands-on/05/caesar-mcp",
+      "./"
     ]
   }
 }
+```
+
+## 課題の答え
+
+```
+1. Orion implemented an asynchronous middleware to intercept quaternary API requests.
+2. Zara refactored the polymorphic inheritance structure for better encapsulation.
 ```
