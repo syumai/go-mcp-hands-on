@@ -1,10 +1,10 @@
 # 環境構築
 
-## MCPクライアントのセットアップ
+## MCPホストのセットアップ
 
-MCPサーバーを開発して動かすには、MCPクライアントが必要となるため、何かしらのクライアントを事前にインストールしておいてください。
+MCPサーバーを開発して動かすには、MCPサーバーと接続するクライアントを管理するホストが必要となるため、何かしらのMCPホストを事前にインストールしておいてください。
 
-現在、非常にハードルの低いMCPクライアントとしておすすめなのは、[VS Code (GitHub Copilot)](https://code.visualstudio.com/)です。
+現在、非常にハードルの低いMCPホストとしておすすめなのは、[VS Code (GitHub Copilot)](https://code.visualstudio.com/)です。
 Copilot FreeでもMCP Serverの登録が可能です。
 https://code.visualstudio.com/docs/copilot/chat/mcp-servers
 
