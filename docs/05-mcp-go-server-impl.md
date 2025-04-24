@@ -47,8 +47,8 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 
 ## 実装について
 
-実装に使う `RotN` 関数は、 `05/caesar-mcp/caesar/caesar.go` に実装されています。
-この関数を使って、`05/caesar-mcp/server/server.go` を実装してください。
+実装に使う `RotN` 関数は、 `caesar-mcp/caesar/caesar.go` に実装されています。
+この関数を使って、`caesar-mcp/server/server.go` を実装してください。
 
 ツールのパラメーターは、以下の2つです。
 
@@ -88,12 +88,19 @@ VS Code以外をご利用の方は、フルパスをご利用ください。
     "args": [
       "run",
       "-C",
-      "${userHome}/go/src/github.com/syumai/go-mcp-hands-on/05/caesar-mcp",
+      "${userHome}/go/src/github.com/syumai/go-mcp-hands-on/caesar-mcp",
       "./"
     ]
   }
 }
 ```
+
+## ツールの実行がうまくいかない場合
+
+実装、またはMCPサーバーの登録方法に問題がある可能性があります。
+
+実装については、テストの実装を行うことで、問題を特定することができます。
+次の章に進んで、テストが通るようになったことを確認してから、改めて課題に取り組んでみてもいいかもしれません。
 
 ## 課題の答え
 

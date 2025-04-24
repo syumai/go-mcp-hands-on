@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/mark3labs/mcp-go/server"
-	caesarserver "github.com/syumai/go-mcp-hands-on/05/caesar-mcp/server"
+	caesarserver "github.com/syumai/go-mcp-hands-on/caesar-mcp/server"
 )
 
 func main() {
